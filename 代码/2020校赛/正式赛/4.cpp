@@ -63,7 +63,7 @@ freopen("in.txt","r",stdin);
 #endif
 ans[0]=1;
 for(int i=1;i<=1000003;++i){
-    ans[i]=ans[i-1]*((27*i*i-27*i+6)%mod)*ni(i)%mod*ni(i);
+    ans[i]=ans[i-1]*((27*i*i-27*i+6)%mod)%mod*ni(i)%mod*ni(i);
     ans[i]%=mod;
 //    cout<<ans[i]<<endl;
 }
